@@ -17,10 +17,10 @@ use App\Http\Controllers\UsersController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return redirect()->action([HomeController::class, 'index']);
-});
+Route::view('/', 'landing');
+// Route::get('/', function () {
+//     return redirect()->action([HomeController::class, 'index']);
+// });
 
 Auth::routes();
 
